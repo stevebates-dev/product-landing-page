@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #eee;
+  height: 100%;
+  position: relative;
+}
+
+#header-img {
+  height: 100px;
+  margin: 0 30px 0 30px;
+}
+
+#header {
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  width: 100%;
+  background: rgb(238, 238, 238);
+}
+
+.nav-link {
+  line-height: 100px;
+  vertical-align: middle;
+  margin: 0 20px;
+}
+
+#nav-bar {
+  float: right;
+}
+
+nav li {
+  display: inline-block;
+}
+
+@media all and (max-width: 660px) {
+  
+  #header {
+    text-align: center;
+  }
+  
+  body {
+    padding-top: 100px;
+  }
+  
+  nav li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #nav-bar {
+    margin: 0 auto;
+    float: none;
+  }
+  
+  .nav-link {
+    height: 1.5em;
+    line-height: 1.5em;
+    vertical-align: middle;
+  }
+  
+  ul {
+    padding-inline-start: 0px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+#container {
+  overflow: hidden;
+/*   height: 100%; */
+  /* Firefox */
+  min-height: -moz-calc(100% - 100px);
+  /* WebKit */
+  min-height: -webkit-calc(100% - 100px);
+  /* Opera */
+  min-height: -o-calc(100% - 100px);
+  /* Standard */
+  min-height: calc(100% - 100px);
+}
+
+#email {
+  margin: 15px;
+  padding: 5px;
+}
+
+.buttons {
+  max-width: 150px;
+  width: 100%;
+  background-color: rgb(11, 11, 165);
+  border: none;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+#video {
+  display: block;
+  margin: 30px auto;
+}
+
+#home {
+  text-align: center;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 100px auto auto auto;
+}
+
+#form {
+  display: inline-block;
+}
+
+#footer { 
+  height: 100px;
+  max-width: 1000px;
+  background-color: #ddd;
+  text-align: right;
+  position: absoulte;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#copyright {
+  padding: 10px;
+}
